@@ -8,7 +8,10 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Checkout repo
@@ -24,6 +27,7 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
+        if: runner.os == 'Linux'
         uses: actions/upload-artifact@v3
         with:
           name: production-files
@@ -41,6 +45,12 @@ jobs:
         with:
           name: production-files
           path: ./dist
+
+      - name: Set MIME type for JavaScript files
+        run: find ./dist -name '*.js' -exec sh -c 'echo "Content-Type: application/javascript" > {}.headers' \;
+
+      - name: Create _headers file
+        run: echo "/*\n  Content-Type: application/javascript" > ./dist/_headers
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
