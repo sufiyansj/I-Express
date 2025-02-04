@@ -8,5 +8,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/vite-react-deploy/index.html"
+  to = "/index.html"
   status = 200
