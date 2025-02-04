@@ -3,7 +3,8 @@
   command = "npm run build"
 
 [context.production.environment]
-  VITE_REACT_APP_NEWS_API_KEY = "your_api_key_here" # Replace with your actual API key
+  VITE_REACT_APP_NEWS_API_KEY = "d5a7e037301940f09b7a491fe4dadf37" # Replace with your actual API key
+  VITE_REACT_APP_BASE_URL=https://your-api-base-url.com
 
 [[redirects]]
   from = "/*"
