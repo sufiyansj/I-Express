@@ -4,3 +4,8 @@
 
 [context.production.environment]
   VITE_REACT_APP_NEWS_API_KEY = "your_api_key_here" # Replace with your actual API key
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

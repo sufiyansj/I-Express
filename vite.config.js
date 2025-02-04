@@ -9,8 +9,9 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: '/vite-react-deploy/', // Add this line
+  base: '/vite-react-deploy/', // Ensure this matches the deployment path
   build: {
+    outDir: 'dist', // Ensure this matches the output directory
     rollupOptions: {
       external: ['react-router-dom'] // Add this line
     }
