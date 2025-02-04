@@ -4,9 +4,9 @@
 
 [context.production.environment]
   VITE_REACT_APP_NEWS_API_KEY = "d5a7e037301940f09b7a491fe4dadf37" # Replace with your actual API key
-  VITE_REACT_APP_BASE_URL=https://your-api-base-url.com
+  VITE_REACT_APP_BASE_URL = "https://your-api-base-url.com"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/vite-react-deploy/index.html"
   status = 200
