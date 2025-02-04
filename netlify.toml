@@ -8,5 +8,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"  # Update this line
+  to = "/index.html"
   status = 200
