@@ -14,8 +14,8 @@ export default defineConfig({
   build: {
     outDir: '../dist', // Ensure this matches the output directory
     rollupOptions: {
-      external: ['react-router-dom'], // Add this line
-      input: '/src/index.js'
+      external: ['react-router-dom'],
+      input: '/src/index.js' // Update this line
     }
   }
 })
