@@ -3,6 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/vite-react-diploy/",
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  base: '/vite-react-deploy/', // Add this line
 })
