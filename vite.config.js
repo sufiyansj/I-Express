@@ -10,4 +10,9 @@ export default defineConfig({
     },
   },
   base: '/vite-react-deploy/', // Add this line
+  build: {
+    rollupOptions: {
+      external: ['react-router-dom'] // Add this line
+    }
+  }
 })
