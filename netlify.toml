@@ -8,5 +8,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "I-Express\index.html"
+  to = "/index.html"  # Update this line
   status = 200
