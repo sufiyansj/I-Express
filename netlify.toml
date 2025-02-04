@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[context.production.environment]
+  VITE_REACT_APP_NEWS_API_KEY = "your_api_key_here" # Replace with your actual API key
