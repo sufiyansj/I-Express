@@ -1,5 +1,5 @@
 [build]
-  publish = "dist"
+  publish = "dist" # Ensure this matches the outDir in vite.config.js
   command = "npm run build"
 
 [context.production.environment]
