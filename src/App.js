@@ -33,15 +33,13 @@ class ErrorBoundary extends React.Component {
 
 function App() {
   return (
-    <BrowserRouter basename="/vite-react-deploy">
-      <Routes>
-        <Route path="/News" element={<News />} />
-        <Route path="/about" element={<About />} />
-        {/* Add other routes here */}
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <h1>Hello, Vite + React!</h1>
+    </div>
   );
 }
+
+export default App;
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

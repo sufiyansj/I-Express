@@ -1,4 +1,5 @@
 import someModule from './someModule.js';
+import './style.css';
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -22,9 +23,4 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));

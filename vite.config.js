@@ -16,7 +16,7 @@ export default defineConfig({
     emptyOutDir: true, // Ensure the output directory is emptied before building
     rollupOptions: {
       external: ['react-router-dom'],
-      input: '/src/index.js' // Ensure this path is correct
+      input: 'index.js' // Ensure this path is correct
     }
   }
 })
